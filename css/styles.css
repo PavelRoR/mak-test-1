@@ -308,10 +308,6 @@ p {
 	height: 100vh;
 }
 
-#end img {
-	position: absolute;
-}
-
 .left_container {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -366,6 +362,7 @@ p {
 }
 
 #janna_back {
+	position: absolute;
 	right: 0;
 	top: 0;
 	bottom: 0;
@@ -375,10 +372,90 @@ p {
 }
 
 #janna {
+	position: absolute;
 	bottom: 0;
 	right: 50px;
 	z-index: 1;
 	width: 400px;
+}
+
+@media screen and (min-width: 1400px) {
+	#janna {
+		width: auto;
+	}
+}
+
+@media screen and (min-width: 1900px) {
+	.container {
+		width: 1400px;
+	}
+	#janna {
+		width: 700px;
+		right: -100px;
+	}
+	#end .pre {
+		font-size: 40px;
+	}
+	h1 {
+		font-size: 54px;
+	}
+	p,
+	.first p,
+	.question label {
+		font-size: 32px;
+	}
+	.first p {
+		width: 820px;
+	}
+	.mail {
+		width: 500px;
+		height: 80px;
+		font-size: 30px;
+	}
+	.form_newsletter .button {
+		width: 500px;
+		height: 80px;
+		font-size: 37px;
+	}
+	.first {
+		background-repeat: repeat;
+		background-size: auto;
+	}
+	#main .pre {
+		font-size: 34px;
+		width: 650px;
+	}
+	#main_shape {
+		left: auto;
+		right: 432px;
+	}
+	.button,
+	.button:focus {
+		font-size: 37px;
+		width: 450px
+	}
+	.choice {
+		width: 1200px;
+	}
+	.question label:before {
+		top: 5px
+	}
+	.question label:after {
+		top: 10px;
+	}
+}
+
+@media screen and (min-width: 2500px) {
+	#janna {
+		width: 70%;
+		right: -320px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	#janna {
+		width: 500px;
+	}
 }
 
 @media screen and (max-width: 1199px) {
@@ -411,6 +488,11 @@ p {
 	.question label:after {
 		left: 5px;
 	}
+	#janna {
+		width: 400px;
+		bottom: auto;
+		top: 50px;
+	}
 }
 
 @media screen and (max-width: 991px) {
@@ -439,6 +521,44 @@ p {
 
 	.first p {
 		width: 360px;
+	}
+	#end {
+		padding-top: 110px;
+		height: auto;
+		position: relative;
+	}
+	#end .container{
+		height: auto;
+		overflow: hidden;
+/*		position: relative;*/
+	}
+	.left_container {
+		display: block;
+		position: relative;
+		z-index: 5;
+		text-align: left;
+	}
+	#janna {
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		bottom: 0;
+		top: auto;
+		left: 0;
+right: 0;
+	}
+	#janna_back {
+		top: auto;
+		right: auto;
+		left: 0;
+		bottom: 0;
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		transform: rotate(90deg);
+		width: 100%;
+		height: auto;
 	}
 }
 
@@ -508,10 +628,15 @@ p {
 	}
 	#main_shape,
 	.first h1,
-	#pic_1, #pic_2, #pic_3, #pic_4, #pic_5, #pic_6{
+	#pic_1,
+	#pic_2,
+	#pic_3,
+	#pic_4,
+	#pic_5,
+	#pic_6 {
 		width: 100%;
 	}
-	
+
 	#main_pic {
 		bottom: -20px;
 		width: 100%;
@@ -520,11 +645,12 @@ p {
 		padding: 25px 0 50px;
 	}
 	#main + .second p,
-	.question label{
+	.question label {
 		font-size: 18px;
 		line-height: 1.2;
 	}
-	.button, .button:focus {
+	.button,
+	.button:focus {
 		width: 100%;
 		margin-top: 30px;
 		font-size: 24px;
