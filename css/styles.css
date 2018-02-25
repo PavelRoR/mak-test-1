@@ -478,11 +478,55 @@ p {
 		position: relative;
 		display: block;
 		margin: 0 auto;
-		bottom: 0;
+		bottom: -40px;
 	}
 }
 
-/*
-@media screen and (max-width: 630px) {
+
+@media screen and (max-width: 430px) {
+	#contacts a {
+		display: block;
+	}
+	#contacts .fa {
+		margin-left: 0;
+		font-size: 16px;
+	}
+	#contacts .fa + span {
+		font-size: 14px
+	}
+	.first p {
+		font-size: 20px;
+
+	}
+	#main .pre {
+		margin-bottom: 0;
+	}
+	#main h1 {
+		margin-top: 10px;
+		font-size: 32px;
+		line-height: 1.2;
+	}
+	#main_shape,
+	.first h1,
+	#pic_1, #pic_2, #pic_3, #pic_4, #pic_5, #pic_6{
+		width: 100%;
+	}
 	
-}*/
+	#main_pic {
+		bottom: -20px;
+		width: 100%;
+	}
+	.second {
+		padding: 25px 0 50px;
+	}
+	#main + .second p,
+	.question label{
+		font-size: 18px;
+		line-height: 1.2;
+	}
+	.button, .button:focus {
+		width: 100%;
+		margin-top: 30px;
+		font-size: 24px;
+	}
+}
