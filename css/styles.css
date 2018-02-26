@@ -354,6 +354,7 @@ p {
 	padding: 0 20px;
 	height: 62px;
 	text-align: left;
+	text-align-last: left;
 }
 
 .form_newsletter .button {
