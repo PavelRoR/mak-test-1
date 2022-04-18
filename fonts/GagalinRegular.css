@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'GagalinRegular';
-    src: url('fonts/GagalinRegular.eot');
-    src: url('fonts/GagalinRegular.eot') format('embedded-opentype'),
-         url('fonts/GagalinRegular.woff2') format('woff2'),
-         url('fonts/GagalinRegular.woff') format('woff'),
-         url('fonts/GagalinRegular.ttf') format('truetype'),
-         url('fonts/GagalinRegular.svg#GagalinRegular') format('svg');
-}
